@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Réduction |prixkdo</title>
+  
+</head>
+<body>
+  <!--debut de l'entête de la navigation-->
+ 
+<style type="text/css">
+  *,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #f1f1f1;
+  }
+
+  .container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .slider img{
+    max-width: 100%;
+    display: none;
+  }
+
+  img.active{
+    display: block;
+    animation: fade 0.8s;
+  }
+
+  @keyframes fade{
+    from{
+      opacity: 0;
+    }
+    to {
+      opacity:1;
+    }
+ }
+    .cont-btn{
+      width: 100%;
+      height: auto;
+      border: 1px solid #000;
+      box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn-nav{
+      font-size: 50px;
+      margin: 0 15px;
+      cursor: pointer;
+    }
+ 
+</style>
+
+<div class="container">
+  <div class="slider">
+    <div class="row">
+      <img class="active prixkdo" src="images/image vitrine bannière 1.jpg">
+    <img class="prixkdo" src="images/image vitrine bannière 2.jpg">
+    <img class="prixkdo" src="images/3.jpeg">
+    </div>
+  </div>
+
+  <div class="cont-btn">
+    <div class="btn-nav left"> <-- </div>
+    <div class="btn-nav right"> --> <i class="fas fa-arrow-right"></i></div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  const items = document.querySelectorAll('.prixkdo');
+  const nbSlide = items.length;
+  const suivant = document.querySelector('.right');
+  const precedent = document.querySelector('.left');
+  let count = 0;
+
+  function slideSuivante(){
+    items[count].classList.remove('active');
+
+    if (count < nbSlide -1) {
+      count++;
+    }else{
+      count = 0;
+    }
+    items[count].classList.add('active');
+    console.log(count);
+
+  }
+
+  suivant.addEventListener('click', slideSuivante);
+
+  function slidePrecedente(){
+    items[count].classList.remove('active');
+
+    if(count > 0){
+
+      count--;
+
+      }else{
+      count = nbSlide-1;
+      }
+
+      items[count].classList.add('active');
+    }
+precedent.addEventListener('click',slidePrecedente);
+
+function keyPress(e){
+  if (e.keyCode === 37) {
+    slidePrecedente();
+  }else if(e.keyCode === 39){
+    slideSuivante();
+  }
+}
+
+document.addEventListener('keydown', keyPress);
+</script>
+</body>
+</html>

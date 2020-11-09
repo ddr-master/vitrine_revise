@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inscription partenaire</title>
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="margin-top: -70px;">
+<div id="registration" style="width: 50%;">
+	<h2>Création de compte partenaire</h2>
+	<form id="registrationForm" action="" method="post">
+		<fieldset >
+			<!--Input for pseudo-->
+			<label for="pseudo" style>Pseudo</label>
+			<div class="contenu">
+				<i class="icone fa fa-user"></i><input class="text" id="pseudo" type="text" name="pseudo" placeholder="veuillez entrer votre pseudo">
+			</div>
+			<!--Input for name-->
+
+			<!--Input for name-->
+			<label for="name" style>Nom du partenaire</label>
+			<div class="contenu">
+				<i class="icone fa fa-user"></i><input class="text" id="name" type="text" name="nom" value="nom" placeholder="Nom du partenaire">
+			</div>
+			<!--Input for name-->
+
+			<!--Design pour le contact-->
+			<label for="tel">Telephone</label>
+			<div class="contenu">
+			<i class="icone fa fa-phone"></i>	
+			<input id="telephone" class="telephone" type="text" name="telephone"  placeholder="Votre contact">
+			</div>
+			
+			<!--fin du Design pour le contact-->
+
+			<!--design du mot de passe-->
+				<label for="motPasse">Mot de passe</label>
+				<div class="contenu">
+					<i class="icone fa fa-key"></i>
+					<input id="passe" class="passe" type="password" name="passe" placeholder="entrer mot de passe"><br>
+				</div>
+			<!--design du mot de passe-->
+
+			<!--Confirmation du mot de passe-->
+				<label for="motPasse">confirmation Mot de passe</label>
+
+				<div class="contenu">
+					<i class="icone fa fa-key"></i>
+					<input class="confirmation" id="confirmation" type="text" name="password" placeholder="confirmer votre mot de passe">
+				</div>
+			<!--Confirmation du mot de passe-->
+<div class="row"  style="display: flex; padding-top: 10px;">
+	<div class="col-lg-3">
+		<!--terme et condition-->
+				<input id="acceptTerms" type="checkbox" name="acceptTerms">
+			<!--terme et condition-->
+	</div>
+	<div class="col-lg-9">
+		<!--text des termes-->
+			 	<label for="acceptTerms">
+			 		I agree to the <a href="">Terms and Conditions</a> and <a>Privacy Policy</a>
+			 	</label>
+			 <!--text des termes-->
+
+	</div>
+</div>
+			
+
+			 
+			 <!--button de validation-->
+			 	<button id="enregistrer" type="submit">Crée votre compte</button>
+			 <!--button de validation-->
+		</fieldset>
+		
+	</form>
+
+ 
+</div><br>
+
+</body>
+</html>

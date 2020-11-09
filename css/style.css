@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+nav.new{
+ height: 70px;
+  position: fixed;
+   z-index: 9999; 
+   background-color: white;
+}
+
+.navbar-nav .nav-item a.nav-link{
+    font-weight: bold;
+    position: relative;
+    list-style: none;
+}
+
+a#parte.btn.my-2.my-sm-0{
+    background-color: #FF7D00;
+    border-radius:7px;
+    border: 3px solid  #FF7D00;
+    color: white
+}
+a#parte.btn.my-2.my-sm-0:hover{
+    border: 3px solid  #FF7D00;
+    background-color: #fff;
+    color: #FF7D00;
+}
+
+a#part.btn.my-2.my-sm-0{
+    color: #FF7D00;
+    border-radius:7px;
+    border: 3px solid  #FF7D00;
+    font-size: 13px;
+}
+a#part.btn.my-2.my-sm-0:hover{
+    border: 3px solid  ;
+    background-color: #FF7D00;
+    color: #fff !important;
+    transition: all ease-in-out;
+}
+
+.navbar-nav .nav-item a.nav-link:hover{
+    color: #FF7D00 !important;
+    transition: .9s;
+
+}
+
+
+.navbar-nav .nav-item a.nav-link:after{
+    content:'';
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    top: 50px;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translate(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255,255,255,0.9);
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+
+}
+
+.navbar-nav .nav-item a.nav-link:hover:after{
+  background-color: #f68c1f;
+  height: 5px;
+-webkit-transform: translateX(-50%) scaleX(1);
+  transform: translateX(-1%) scale(1);
+}
+
+/*fin du Menu qui s'affiche sur l'image d'acceuil de l'index 
+nav.new{
+ height: 70px;
+  position: fixed;
+   z-index: 9999; 
+   background-color: white;
+}*/
+  @media (min-width: 320px) and (max-width: 680px) {
+  nav.container-fluid ul {
+background-color: black;
+  }
+  nav.container-fluid .menu a.nav-link{
+
+color: #FF7D00;
+  }
+  nav.container-fluid img{
+max-width: 80px;
+height: auto;
+margin-top: -20px;
+margin-left: 10px;
+position: absolute;
+  }
+
+  nav.container-fluid button{
+    position: relative;
+
+  }
+  nav.container-fluid button{
+    position: relative;
+   
+  }
+  .navbar-nav .nav-item a.nav-link{   
+    font-size: 20px;
+    text-align: center;
+}
+.first .wrapper{
+  padding: 0;
+}
+.first h2{
+font-size: 15px;
+}
+a#parte.btn.my-2.my-sm-0{   
+    font-size: 16px;
+}
+a#part.btn.my-2.my-sm-0{   
+    font-size: 10px;
+    width: 95%;
+    padding: 0;
+}
+
+  
+}
+ @media (min-width: 320px) and (max-width: 680px){
+  .slid #carouselExampleIndicators .carousel-inner img{  
+   height: 220px;
+   margin-top: -10px;
+
+  }
+
+ } 
+@media only screen and (max-width: 980px) {
+  .navbar-brand img{
+  height: 10rem;
+  margin-left: 300px;
+  /*height: 3rem;*/
+  }
+
+  button span.icon{
+    height: 10rem;
+    width: 100px;
+    
+  }
+  
+  
+ 
+
+.row a.btn{
+  margin-top: 10px;
+  text-align: center; 
+}
+ a#parte{
+    display: flex;
+    width: 100%;
+    font-size: 50px;
+    
+}
+
+
+  #course{
+    margin-top: 400px;
+  }
+.hello button
+{
+    width: 100%;  
+}
+      .hello button span{
+   
+    font-size: 70px; 
+      }
+
+
+} 
+/* l'arriere plan du caroussel padding: 50px;*/
+
+.slid #carouselExampleIndicators{  
+    position: absolute;
+    
+    margin-top: -200px;
+
+  }
+
+.slid #carouselExampleIndicators{  
+    position: absolute;
+    width: 100%;
+    margin-top: -200px;
+
+  }
+
+
+
+.slid .carousel-caption{
+    top: 150px;
+    text-shadow: 1px 1px black;
+    font-weight: bolder;
+
+}
+
+@media only screen and (max-width: 980px){
+    .slid #carouselExampleIndicators{  
+    
+    margin-top: -250px;
+    }
+}
+/* Designe de la partie des boutons de catégorie*/
+.first{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+   margin-top: 10px;
+}
+.first h2 span{
+    display: none;
+  }
+
+  .first a{
+    color: #FF7D00;
+    border-radius:7px; 
+    border: 3px solid  #FF7D00;
+     font-size: 10px;
+     width: 1px;
+
+  }
+  .first .item{
+    order: 5;
+
+  }
+@media (min-width: 320px) and (max-width: 680px){
+  #categorie{
+    margin-top: 60px;
+  }
+  .first {
+    width: 100%;
+    margin: 0px;
+    padding: 0px; 
+  }
+  .first h2{
+    margin-top: 50px;
+  }
+  .first h2 span{
+    display: inline-flex;
+    margin-left: 50px;
+    font-size: 20px;
+  }
+  .first .wrapper{
+   margin-top: -100px;
+   
+}
+.first .wrapper a{
+   margin-left: -25px;
+    width: 90%;
+   
+}
+
+.first .btn .my-2 .my-sm-0{
+  width: 100px;
+  color: black;
+}
+.first .wrapper a{
+  color: black;
+}
+
+}
+/* Designe de la partie de Nos meilleurs partenaires*/
+.second{
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 60px;
+   margin-top: 10px;
+}
+
+
+.second .wrapper .owl-carousel .partenaire{
+        margin: 0 10px;
+      margin-left: 10px;
+      box-shadow: 0 0 20px 2px rgba(0,0,0, .1);
+      transition: 1s;
+      background-color: #800000;
+      border: 1px solid white;
+      padding: 1px;
+      border-radius: 10px;
+      width: 180px;
+
+
+}
+
+.second .wrapper .owl-carousel .partenaire:hover{
+        margin: 0 10px;
+      margin-left: 10px;
+      box-shadow: 0 0 2px 2px rgba(0,0,0, .1);
+      transition: 1s;
+      background-color: #800000;
+      border: 1px solid #800000;
+      padding: 1px;
+      border-radius: 5px;
+      width: 180px;
+      transform:scale(0.9);
+      z-index: 2;
+}
+
+.second .wrapper .owl-carousel .partenaire a{
+   
+     text-decoration: none;
+
+}
+
+.second .wrapper .owl-carousel .lo:hover{
+  
+
+
+}
+.second .wrapper .owl-carousel .lo{
+    padding: 1px;
+
+   margin-right:1px;
+   margin-left:1px;
+   background-color: white;
+   border-radius: 5px 5px 0 0;
+
+}
+
+.second .wrapper .owl-carousel .partenaire img{
+  display: block;
+    box-shadow: 0 0 2px 2px white;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px;
+    height: 144px;
+    margin-left: 0px;
+}
+
+
+
+.second .wrapper .owl-carousel .partenaire .text h5{
+    color:white; 
+    font-family: montserrat;
+    font-size: 10px;
+}
+.second .wrapper .owl-carousel .partenaire .text:hover{
+    color: black;
+}
+
+.second h1{
+    font-family: montserrat;
+    color:#FF7D00;
+   font-size: 25px;
+margin-top: -50px;
+}
+
+.second h6{
+    font-family: montserrat;
+    color:#FF7D00;
+   font-size: 15px;
+float: right;
+margin-top: -50px;
+   
+}
+.second h5{
+    font-family: montserrat;
+    color: #800000;
+   font-weight: bold;
+    
+}
+.second h1 span{
+   margin-left: 1000px;
+
+}
+.second .wrapper .owl-carousel img {
+    width: 100%;
+    height: 100px;
+}
+
+@media (min-width: 320px) and (max-width: 680px){
+  .second{
+    margin-right: 33px;
+    margin-left: 28px;
+  }
+  .second h1{
+   margin-top: -10px;
+  }
+  .meilleur{
+    margin-right: 3px;
+    margin-left: -7px;
+ 
+  }
+  .owl-item{
+    width: 179px !important;
+
+  }
+  .second .wrapper .owl-carousel .partenaire img{
+  display: block;
+    box-shadow: 0 0 2px 2px white;
+    width: 100%;
+    border-radius: 6px;
+    padding: 20px;
+    height: 144px;
+    margin-left: 0px;
+}
+
+  .second .box .text h5{
+font-size: 11px;
+margin:0;
+  }
+  .second .wrapper .owl-carousel .partenaire{    
+         width: 94%;
+    margin-right: -20px;
+    margin-left: 4px;
+      
+}
+}
+.first .wrapper .owl-carousel .btn{
+    width: 100%;
+
+}
+
+.second .wrapper .owl-carousel .btn{
+    width: 100%;
+
+}
+
+@media only screen and (max-width: 980px){
+    .first .wrapper .owl-carousel{
+    margin-top: 300px;
+    }
+    .first .wrapper .owl-carousel a#parte{
+    font-size: 2vw;
+
+    }
+}
+
+.first .wrapper .owl-carousel .owl-nav button.owl-next{
+            background:none;
+            color:inherit;
+            border: none;
+            padding: 0 !important; 
+            font: inherit;
+            position: absolute;
+            top: 10px;
+            transform: translateY(-50%);
+            right: -40px;
+            
+            border-radius: 150px;
+           
+        }
+        .owl-nav button.owl-next{
+            background:none;
+            color:inherit;
+            border: none;
+            padding: 0 !important; 
+            font: inherit;
+            position: absolute;
+            top: 10px;
+            transform: translateY(-50%);
+            right: -40px;
+            
+            border-radius: 150px;
+           
+        }
+
+        .first .wrapper .owl-carousel .owl-nav button.owl-prev {
+            background:none;
+            color:inherit;
+            border: none;
+            padding: 0 !important; 
+            font: inherit;
+            position: absolute;
+            top: 10px;
+            transform: translateY(-50%);
+            left: -40px;
+            
+            border-radius: 50px;
+            
+               
+        }
+
+       .second .wrapper .owl-carousel .owl-nav button.owl-prev{
+            background:none;
+            color:inherit;
+            border: none;
+            padding: 0 !important; 
+            font: inherit;
+            position: absolute;
+            top: 70px;
+            transform: translateY(-50%);
+            left: -40px;;
+            
+            border-radius: 50px;
+              
+        }
+
+        .second .wrapper .owl-carousel .owl-nav button.owl-next{
+       
+            background:none;
+            color:inherit;
+            border: none;
+            padding: 0 !important; 
+            font: inherit;
+            position: absolute;
+            top: 70px;
+            transform: translateY(-50%);
+            right: -40px;
+            
+            border-radius: 50px;
+            
+        }
+        
+
+@media only screen and (max-width: 980px){
+    .first .wrapper .owl-carousel{
+    margin-top: 100px;
+    }
+    .first .wrapper .owl-carousel a#parte{
+    font-size: 2vw;
+
+    }
+    .first .wrapper .owl-carousel .owl-nav button.owl-next{
+         display: block;
+        }
+
+        .first .wrapper .owl-carousel .owl-nav button.owl-prev {
+            display: none;
+        }
+
+        .second .wrapper .owl-carousel .owl-nav button.owl-next{
+         display: block;
+        }
+
+        .second .wrapper .owl-carousel .owl-nav button.owl-prev {
+            display: none;
+        }
+
+        .owl-dots{
+   
+  display: none;
+
+}
+}
+
+
+
+.container .card{
+    background-color: #FF7D00;
+    border-radius: 50px;
+}
+
+.container .card h5,p{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container .card h5{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.container .card p{
+    
+    font-size: 20px;
+}
+
+.container .card img{
+    background-color: red;
+    border-radius: 0 50px 50px 0px;
+}
+
+footer{
+   background-color: #761115; 
+    margin-top: 100px;
+}
+
+footer .footer {
+   
+    margin-top: -100px;
+}
+footer .footer {
+   list-style: none;
+    margin-left: 170px;
+}
+
+footer .footer ul li {
+   list-style: none;
+    color: white;
+}
+
+
+footer .footer {
+   
+    top: 100px;
+}
+
+footer .row img{
+   width: 50px;
+}
+
+footer .btn{
+     margin-top: -40px;
+     margin-left: -33px;
+     padding-top: 50px;
+        height: 200px; 
+        width: 200px; 
+        background-color: white;
+        border: 5px solid rgba(255, 255, 255, 255);
+        border-radius: 50%; 
+    } 
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+ .slideb img{
+    position: relative;
+   margin-top: 100px;
+   width: 100%;
+
+   
+}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ .slideb img{
+    position: relative;
+   margin-top: 100px;
+   width: 100%;
+
+   
+}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ .slideb img{
+    position: relative;
+  
+   width: 100%;
+     top: 10000px;
+
+   
+}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width:10px)
+{
+  .navbar-nav .nav-item a.nav-link{
+    color: red;
+}
+} 
+
+@media (min-width:270px) {  
+   .slideb img{
+    position: relative;
+top: -40px;
+   width: 100%;
+
+}
+.slid #carouselExampleIndicators{  
+    top: 350px;
+}
+.slid #carouselExampleIndicators img{
+   height: auto;
+}
+.owl-prev{
+  left: -30px;
+
+}
+.owl-prev{
+  right: -30px; 
+}
+
+.owl-prev, .owl-next{
+  position: absolute;
+  top: 30%;
+}
+.second .owl-prev span, .second .owl-next span{
+  font-size: 60px;
+margin-left: 15px;
+margin-right: 15px;
+  color: black;
+
+}
+.second .owl-prev span:hover, .second .owl-next span:hover{
+
+
+}  
+.second button.owl-prev span, button.owl-next span{
+  border-radius: 10px;
+  padding: 10px;
+
+} 
+.first{
+    padding-left: -55px;
+    padding-right: -55px;
+    padding-top: 60px;
+  
+   margin-top: 5px;"
+}
+.first .owl-prev span, .first .owl-next span{
+  font-size: 60px;
+
+  color: black;
+
+} 
+.first button.owl-prev span, .first button.owl-next span{
+   background-color: white;
+
+  border-radius: 10px;
+   padding-top: 60px;
+  
+} 
+}
+ @media (min-width: 320px) and (max-width: 680px){
+  .first button.owl-prev span, .first button.owl-next span{
+   display: none;
+
+} 
+  .first .owl-prev span, .first .owl-next span{
+  display: none;
+
+} 
+.second .owl-prev span, .second .owl-next span{
+  display: none;
+
+}
+ }
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+ .slid #carouselExampleIndicators{  
+    
+    margin-top: -250px;
+    }
+}
+
+@media (min-width: 1281px) {
+  
+
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  
+}

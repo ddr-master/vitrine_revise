@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<textarea id="alltext"></textarea>
+
+<ol onclick="addText(event)">
+  <li>Hello</li>
+  <li>World</li>
+  <li>Earthlings</li>
+</ol>
+
+<script>
+    function addText(event) {
+    var targ = ' '.event.target || event.srcElement;
+    document.getElementById("alltext").value += targ.textContent || targ.innerText;
+}
+</script>
+
+</body>
+</html>
